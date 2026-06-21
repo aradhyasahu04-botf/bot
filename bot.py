@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands, tasks
 from python_aternos import Client
 import datetime
-import os
 
 # 1. Setup the Discord Bot
 intents = discord.Intents.default()
@@ -10,10 +9,10 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ==================== CONFIGURATION ====================
-# These pull from your cloud server settings securely
-ATERNOS_USER = os.getenv("ATERNOS_USER")
-ATERNOS_PASS = os.getenv("ATERNOS_PASS")
-LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID"))
+# Type your real details straight into these quotation marks:
+ATERNOS_USER = "YOUR_ATERNOS_USERNAME"
+ATERNOS_PASS = "YOUR_ATERNOS_PASSWORD"
+LOG_CHANNEL_ID = 123456789012345678  # Paste your Discord channel ID numbers (NO quotes!)
 # =======================================================
 
 def get_aternos_server():
@@ -124,5 +123,5 @@ async def restart_cmd(ctx):
         await ctx.send("♻️ Server is restarting!")
     except Exception as e: await ctx.send(f"⚠️ Error: {e}")
 
-# Read the bot token from variables securely
-bot.run(os.getenv("DISCORD_TOKEN"))
+# Paste your real secret Bot Token inside these quotation marks:
+bot.run("YOUR_DISCORD_BOT_TOKEN")
