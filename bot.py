@@ -10,9 +10,9 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ==================== CONFIGURATION ====================
 # Type your real details straight into these quotation marks:
-ATERNOS_USER = "YOUR_ATERNOS_USERNAME"
-ATERNOS_PASS = "YOUR_ATERNOS_PASSWORD"
-LOG_CHANNEL_ID = 123456789012345678  # Paste your Discord channel ID numbers (NO quotes!)
+ATERNOS_USER = "MrGammerOP_"
+ATERNOS_PASS = "Dhruv@123"
+LOG_CHANNEL_ID = 1513773252982341783  # Paste your Discord channel ID numbers (NO quotes!)
 # =======================================================
 
 def get_aternos_server():
